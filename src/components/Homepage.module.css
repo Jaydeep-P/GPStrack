@@ -1,0 +1,49 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  
+  .navigation{
+    overflow-y: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0.7rem;
+  }
+  
+  .navlink{
+    user-select: none;
+    font-weight: 500;
+    border-radius: 1rem;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    aspect-ratio: 1/1;
+    border: 0.2rem rgba(0, 0, 0, 0.13) solid;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+  .icon{
+    fill: #f6851a;
+    font-size: 3rem;
+  }
+  
+  .navlink:hover,
+  .navlink:focus{
+    background-color: #f6851a;
+    color: white;
+    border: 0.2rem transparent solid;
+  }
+  
+  .navlink:hover .icon,
+  .navlink:focus .icon{
+    fill: white;
+  }
+  
